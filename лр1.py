@@ -21,11 +21,23 @@ for i in range(len(s)):
          g+=1
 print(st)
 print(g)
-#-----4-----
+#-----3-----
 
 S = str(input())
 result = ""
 for i in range(len(S)):
-    if S[i]==S[i+1]:
-       result = S.replace(S[i])
+    if i==0 or S[i]!=S[i-1]:
+       result +=S[i]
 print(result)
+#----4----
+first = str(input())
+second = str(input())
+sl1= set(first)
+sl2 = set(second)
+count = False
+if sl1 == sl2:
+    count= True
+else:
+    count = False
+print(count)
+#-----5-----
